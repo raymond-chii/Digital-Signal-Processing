@@ -170,6 +170,7 @@ grid on;
 Xdb = 10*log10(abs(X));
 [time, frequency] = meshgrid(Z, Y);
 figure; 
+title("spetrogram")
 surf(frequency , time, Xdb);
-colormap winter;
+colormap hot;
 
